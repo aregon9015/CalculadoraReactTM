@@ -1,6 +1,6 @@
-// Calculator.js
 import React, { useState } from 'react';
 import './Calculator.css';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
 // Importa el componente YouTubeVideo
 import YouTubeVideo from './YouTubeVideo';
@@ -104,6 +104,10 @@ function Calculator() {
             </div>
             {/* Agrega el componente YouTubeVideo a la derecha */}
             <YouTubeVideo />
+            {/* Botón para regresar al inicio */}
+            <Link to="/">
+                <button className="back-button">Regresar al Inicio</button>
+            </Link>
         </div>
     );
 }
